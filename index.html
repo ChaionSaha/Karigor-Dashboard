@@ -8,11 +8,11 @@
 
 		<title>Karigor Dashboard</title>
 	</head>
-	<body class="min-h-screen bg-base-100">
+	<body class="min-h-screen bg-base-300">
 		<div class="container flex mx-auto">
 			<!-- Sidebar  -->
 			<div
-				class="z-[100] bg-base-100 xl:bg-transparent flex xl:pr-10 duration-150 flex-col items-center w-full translate-x-[-100%] xl:translate-x-0 absolute xl:relative min-h-screen py-5 xl:w-[20%] gap-y-10"
+				class="z-[100] bg-base-100 flex xl:px-5 duration-150 flex-col items-center w-full translate-x-[-100%] xl:translate-x-0 absolute xl:relative min-h-screen py-5 xl:w-[20%] gap-y-10"
 				id="sidebar"
 			>
 				<div class="relative flex justify-center w-full">
@@ -110,6 +110,98 @@
 								<div class="notification-badge"></div>
 							</button>
 						</div>
+					</div>
+				</div>
+
+				<!-- cards section -->
+				<div
+					class="grid px-5 mt-10 lg:grid-cols-4 md:grid-cols-2 gap-y-10 xl:ps-5 gap-x-10"
+				>
+					<div
+						class="flex flex-col items-center justify-center py-10 text-center gap-y-5 rounded-3xl bg-base-100"
+					>
+						<h2 class="text-5xl text-accent">653</h2>
+						<p class="text-base-200">Total Leads</p>
+					</div>
+					<div
+						class="flex flex-col items-center justify-center py-10 text-center gap-y-5 rounded-3xl bg-base-100"
+					>
+						<h2 class="text-5xl text-accent">201</h2>
+						<p class="text-base-200">Total Applicants</p>
+					</div>
+					<div
+						class="flex flex-col items-center justify-center py-10 text-center gap-y-5 rounded-3xl bg-base-100"
+					>
+						<h2 class="text-5xl text-accent">34</h2>
+						<p class="text-base-200">Number of Services</p>
+					</div>
+					<div
+						class="flex flex-col items-center justify-center py-10 text-center gap-y-5 rounded-3xl bg-base-100"
+					>
+						<h2 class="text-5xl text-accent">3,024</h2>
+						<p class="text-base-200">Overall Invoices</p>
+					</div>
+				</div>
+
+				<h1 class="mt-24 text-6xl font-bold text-center">
+					Welcome To <span class="text-primary">Kari</span
+					><span class="text-secondary">gor</span> Dashboard
+				</h1>
+
+				<!-- recent invoices section -->
+				<div
+					class="flex flex-col px-2 py-5 mx-5 mt-16 border bg-base-100 rounded-xl"
+				>
+					<div class="flex items-center justify-between">
+						<p class="font-bold">Recent Invoices</p>
+						<button
+							class="text-white normal-case border-0 btn bg-gradient-to-r btn-sm from-primary to-secondary"
+						>
+							Filter
+							<i class="bi bi-filter"></i>
+						</button>
+					</div>
+					<div class="mt-10 overflow-x-auto">
+						<table class="table table-lg border-[#d1d1d1]">
+							<!-- head -->
+							<thead>
+								<tr class="border-[#d1d1d1]">
+									<th>No</th>
+									<th>Customer ID</th>
+									<th>Customer Name</th>
+									<th>City</th>
+									<th>Order Date</th>
+									<th>Order Status</th>
+									<th>Amount</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="border-[#d1d1d1] font-bold">
+									<th>1</th>
+									<td>#6545</td>
+									<td>Khaled</td>
+									<td>Rajshahi</td>
+									<td>01 Oct | 11:29 am</td>
+									<td class="flex items-center gap-x-2">
+										<p class="order-status bg-secondary"></p>
+										Paid
+									</td>
+									<td>$64</td>
+								</tr>
+								<tr class="border-[#d1d1d1] font-bold">
+									<th>2</th>
+									<td>#5646</td>
+									<td>Nayem</td>
+									<td>Bogra</td>
+									<td>01 Sept | 10:10 am</td>
+									<td class="flex items-center gap-x-2">
+										<p class="order-status bg-warning"></p>
+										Pending
+									</td>
+									<td>$64</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>

@@ -29,3 +29,7 @@
 .notification-badge {
 	@apply absolute bg-[#f00] top-[2%] right-0 h-2 w-2 rounded-full;
 }
+
+.order-status {
+	@apply w-3 h-3 rounded-full;
+}
