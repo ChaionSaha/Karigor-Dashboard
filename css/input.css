@@ -33,3 +33,31 @@
 .order-status {
 	@apply w-3 h-3 rounded-full;
 }
+
+.tab-active {
+	@apply text-[#0F60FF];
+	border-color: #0f60ff !important;
+}
+
+.success-badge {
+	@apply p-1 px-2 rounded-lg text-success-content;
+	background-color: rgba(40, 199, 111, 0.16);
+}
+
+.warning-badge {
+	@apply p-1 px-2 rounded-lg text-warning-content;
+	background-color: rgba(255, 198, 0, 0.16);
+}
+
+.error-badge {
+	@apply p-1 px-2 rounded-lg text-error-content;
+	background-color: rgba(189, 0, 255, 0.16);
+}
+
+.page {
+	@apply duration-150 border-0 hover:bg-warning hover:text-white btn bg-base-300 text-base-200;
+}
+
+.page-active {
+	@apply bg-warning text-white;
+}

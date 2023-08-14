@@ -22,7 +22,7 @@ module.exports = {
 					'base-100': '#ffffff',
 					'base-200': '#8B909A',
 					'base-300': '#fafafa',
-					success: 'rgba(40, 199, 111, 0.16)',
+					success: 'rgba(40,199,111,0.16)',
 					'success-content': '#28C76F',
 					warning: 'rgba(255, 198, 0, 0.16)',
 					'warning-content': '#FFC600',
