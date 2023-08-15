@@ -37,7 +37,7 @@
 						<i class="bi bi-house"></i>
 						Dashboard</a
 					>
-					<a class="sidebar-link">
+					<a href="./Customers.html" class="sidebar-link">
 						<i class="bi bi-people"></i>
 						Customers</a
 					>
@@ -75,7 +75,7 @@
 
 			<!-- Main body section -->
 			<div
-				class="flex flex-col w-full overflow-y-auto xl:px-10 xl:w-[80%] bg-base-300"
+				class="flex flex-col w-full px-5 overflow-y-auto xl:px-10 xl:w-[80%] bg-base-300"
 			>
 				<!-- header name section -->
 				<div class="flex flex-col justify-between py-5 gap-y-5 lg:flex-row">
@@ -110,11 +110,11 @@
 					</div>
 					<div class="flex flex-col mt-5">
 						<div class="tab-details" id="all">
-							<div class="flex justify-between">
-								<div class="flex gap-x-1 bg-base-100 w-fit">
+							<div class="flex flex-col justify-between gap-y-2 lg:flex-row">
+								<div class="flex gap-x-1 bg-base-100 lg:w-fit">
 									<input
 										type="text"
-										class="input focus:outline-1"
+										class="w-full input focus:outline-1"
 										placeholder="Search by order id"
 									/>
 									<button
@@ -206,7 +206,9 @@
 									</tbody>
 								</table>
 
-								<div class="flex items-center justify-between p-5 mt-16">
+								<div
+									class="flex flex-col items-center justify-between p-5 mt-16 lg:flex-row"
+								>
 									<p class="flex items-center text-base-200 gap-x-2">
 										Showing
 										<select class="text-black select select-sm select-bordered">

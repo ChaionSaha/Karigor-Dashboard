@@ -7805,6 +7805,11 @@ details.collapse summary::-webkit-details-marker{
   margin-bottom: 1.25rem;
 }
 
+.me-2{
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -7926,6 +7931,10 @@ details.collapse summary::-webkit-details-marker{
 
 .hidden{
   display: none;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .min-h-screen{
@@ -8491,6 +8500,10 @@ details.collapse summary::-webkit-details-marker{
   row-gap: 2.5rem;
 }
 
+.gap-y-2{
+  row-gap: 0.5rem;
+}
+
 .gap-y-4{
   row-gap: 1rem;
 }
@@ -8935,19 +8948,14 @@ details.collapse summary::-webkit-details-marker{
   border-style: none;
 }
 
-.border-\[\#d1d1d1\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(209 209 209 / var(--tw-border-opacity));
-}
-
-.border-base-300{
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--b3) / var(--tw-border-opacity));
-}
-
 .border-\[\#E9E7FD\]{
   --tw-border-opacity: 1;
   border-color: rgb(233 231 253 / var(--tw-border-opacity));
+}
+
+.border-\[\#d1d1d1\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 209 209 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -10154,6 +10162,11 @@ details.collapse summary::-webkit-details-marker{
 }
 
 @media (min-width: 992px){
+  .lg\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
