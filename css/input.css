@@ -59,5 +59,15 @@
 }
 
 .page-active {
-	@apply bg-warning text-white;
+	@apply text-white bg-warning;
+}
+
+.special-table {
+	:where(th, td) {
+		padding-left: 0;
+	}
+
+	:where(tr) {
+		@apply border-0;
+	}
 }

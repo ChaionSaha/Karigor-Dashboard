@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/output.css" />
+		<script defer src="./js/index.js"></script>
+
+		<title>Karigor Dashboard</title>
+	</head>
+	<body class="min-h-screen bg-base-300">
+		<div class="container flex mx-auto">
+			<!-- Sidebar  -->
+			<div
+				class="z-[100] bg-base-100 flex xl:px-5 duration-150 flex-col items-center w-full translate-x-[-100%] xl:translate-x-0 absolute xl:relative min-h-screen py-5 xl:w-[20%] gap-y-10"
+				id="sidebar"
+			>
+				<div class="relative flex justify-center w-full">
+					<img src="./img/logo.png" alt="" class="w-fit" />
+					<button
+						class="absolute right-[10%] btn btn-outline top-1/2 translate-y-[-50%] xl:hidden"
+						onclick="sidebarToggle()"
+					>
+						<i
+							class="text-xl text-base-200 hover:text-primary bi bi-text-indent-right"
+						></i>
+					</button>
+				</div>
+
+				<div class="flex flex-col gap-y-4 w-[80%] xl:w-[100%]">
+					<p
+						class="mb-5 text-sm text-center uppercase xl:mb-0 xl:text-left text-base-200"
+					>
+						Main menu
+					</p>
+					<a href="./index.html" class="sidebar-link">
+						<i class="bi bi-house"></i>
+						Dashboard</a
+					>
+					<a href="./Customers.html" class="sidebar-link active-sidebar-link">
+						<i class="bi bi-people"></i>
+						Customers</a
+					>
+					<a class="sidebar-link">
+						<i class="bi bi-person-circle"></i>
+						Service Man</a
+					>
+					<a class="sidebar-link">
+						<i class="bi bi-file-earmark-text"></i>
+						Post List</a
+					>
+					<a class="sidebar-link">
+						<i class="bi bi-gear"></i>
+						Service List</a
+					>
+					<a href="./OrderManagement.html" class="sidebar-link">
+						<i class="bi bi-cart3"></i>
+						Order Management</a
+					>
+
+					<a class="sidebar-link">
+						<i class="bi bi-box"></i>
+						Transaction</a
+					>
+
+					<a href="" class="mt-5 sidebar-link">
+						<i class="text-xl bi bi-box-arrow-right"></i>
+						Log Out</a
+					>
+				</div>
+			</div>
+
+			<!-- Main body section -->
+			<div
+				class="flex flex-col w-full overflow-y-auto xl:px-10 px-5 xl:w-[80%] bg-base-300"
+			>
+				<!-- header name section -->
+				<div class="flex flex-col justify-between py-5 gap-y-5 lg:flex-row">
+					<div class="flex justify-between">
+						<h2 class="text-2xl font-bold">Customer Detail</h2>
+						<button class="btn btn-outline xl:hidden" onclick="sidebarToggle()">
+							<i class="text-xl text-base-200 bi bi-text-indent-left"></i>
+						</button>
+					</div>
+
+					<div class="flex items-center gap-x-5">
+						<div class="flex text-2xl gap-x-5">
+							<button class="relative">
+								<i class="bi bi-chat-square-dots"></i>
+							</button>
+
+							<button class="relative">
+								<i class="bi bi-bell"></i>
+								<div class="notification-badge"></div>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex flex-col bg-base-100">
+					<div class="grid py-5 border-b gap-y-5 xl:grid-cols-3">
+						<div
+							class="flex items-center px-5 py-5 border-r xl:px-0 xl:justify-center gap-x-5"
+						>
+							<img src="./img/Avatar2.png" alt="" />
+							<div class="flex flex-col">
+								<h2 class="text-xl font-bold">Demo lox</h2>
+								<p class="text-base-200">demo@gmail.com</p>
+							</div>
+						</div>
+						<div class="flex flex-col px-5 border-r">
+							<p class="uppercase text-base-200">personal information</p>
+
+							<div class="overflow-x-auto">
+								<table class="table special-table">
+									<tr>
+										<td>Contact Number</td>
+										<td>+880123456789</td>
+									</tr>
+
+									<tr>
+										<td>Gender</td>
+										<td>Male</td>
+									</tr>
+
+									<tr>
+										<td>Date of Birth</td>
+										<td>1 Jan, 1985</td>
+									</tr>
+									<tr>
+										<td>Address</td>
+										<td>Dhaka, BD</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+
+						<div class="flex flex-col justify-between px-5">
+							<div class="flex flex-col">
+								<p class="uppercase text-base-200">extra information</p>
+								<div class="overflow-x-auto">
+									<table class="table special-table">
+										<tr>
+											<td>Referer</td>
+											<td>Demo name</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div class="grid grid-cols-3">
+								<div class="flex flex-col">
+									<p class="text-2xl font-bold">150</p>
+									<p class="text-sm text-base-200">Total Order</p>
+								</div>
+								<div class="flex flex-col">
+									<p class="text-2xl font-bold">140</p>
+									<p class="text-sm text-base-200">Completed</p>
+								</div>
+								<div class="flex flex-col">
+									<p class="text-2xl font-bold">10</p>
+									<p class="text-sm text-base-200">Cancelled</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Naves and tabs -->
+					<div
+						class="flex flex-col justify-between py-5 lg:py-2 gap-y-5 lg:flex-row px-7"
+					>
+						<div class="tabs">
+							<a class="tab tab-bordered tab-active" data-target="all"
+								>All Orders</a
+							>
+							<a class="tab tab-bordered" data-target="pending">Running</a>
+							<a class="tab tab-bordered" data-target="cancelled">Cancelled</a>
+						</div>
+						<div class="flex rounded-lg shadow-sm gap-x-1 bg-base-100 lg:w-fit">
+							<input
+								type="text"
+								class="w-full input focus:outline-1"
+								placeholder="Search by order id"
+							/>
+							<button
+								class="duration-150 btn btn-ghost hover:text-white hover:bg-gradient-to-r from-primary to-secondary"
+							>
+								<i class="text-xl bi bi-search"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- tab-details -->
+				<div class="flex flex-col">
+					<div class="tab-details" id="all">
+						<div class="mt-10 bg-base-100 rounded-xl">
+							<div class="overflow-x-auto bg-base-100 rounded-xl">
+								<table class="table table-lg border-[#d1d1d1]">
+									<!-- head -->
+									<thead>
+										<tr class="border-[#E9E7FD] uppercase">
+											<th>order id</th>
+											<th>service man</th>
+											<th>customer</th>
+											<th>amount</th>
+											<th>profit</th>
+											<th>status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="border-[#E9E7FD]">
+											<td class="font-bold">#6545</td>
+											<td>Name</td>
+											<td>Demo name</td>
+											<td>$654</td>
+											<td class="flex items-center gap-x-2">
+												$154
+												<p class="success-badge">16%</p>
+											</td>
+											<td>
+												<p class="font-normal warning-badge w-fit">Running</p>
+											</td>
+											<td>
+												<p class="link link-hover">
+													<i
+														class="text-2xl text-base-200 bi bi-caret-down-square"
+													></i>
+												</p>
+											</td>
+										</tr>
+
+										<tr class="border-[#E9E7FD]">
+											<td class="font-bold">#6545</td>
+											<td>Name</td>
+											<td>Demo name</td>
+											<td>$654</td>
+											<td class="flex items-center gap-x-2">
+												$154
+												<p class="success-badge">16%</p>
+											</td>
+											<td>
+												<p class="font-normal success-badge w-fit">Completed</p>
+											</td>
+											<td>
+												<p class="link link-hover">
+													<i
+														class="text-2xl text-base-200 bi bi-caret-down-square"
+													></i>
+												</p>
+											</td>
+										</tr>
+
+										<tr class="border-[#E9E7FD]">
+											<td class="font-bold">#6545</td>
+											<td>Name</td>
+											<td>Demo name</td>
+											<td>$654</td>
+											<td class="flex items-center gap-x-2">
+												$154
+												<p class="success-badge">16%</p>
+											</td>
+											<td>
+												<p class="font-normal error-badge w-fit">Cancelled</p>
+											</td>
+											<td>
+												<p class="link link-hover">
+													<i
+														class="text-2xl text-base-200 bi bi-caret-down-square"
+													></i>
+												</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div
+								class="flex flex-col items-center justify-between p-5 mt-16 gap-y-5 lg:flex-row"
+							>
+								<p class="flex items-center text-base-200 gap-x-2">
+									Showing
+									<select class="text-black select select-sm select-bordered">
+										<option>10</option>
+										<option>20</option>
+										<option>30</option>
+									</select>
+									of 50
+								</p>
+								<div class="join gap-x-1">
+									<button class="page">
+										<i class="bi bi-chevron-left"></i>
+									</button>
+									<button class="page page-active">1</button>
+									<button class="page">2</button>
+									<button class="page">3</button>
+									<button class="page">4</button>
+									<button class="page">
+										<i class="bi bi-chevron-right"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="hidden tab-details" id="pending">
+						<div class="mt-10 bg-base-100 rounded-xl">
+							<div class="overflow-x-auto bg-base-100">
+								<table class="table table-lg border-[#d1d1d1]">
+									<!-- head -->
+									<thead>
+										<tr class="border-[#E9E7FD] uppercase">
+											<th>order id</th>
+											<th>service man</th>
+											<th>customer</th>
+											<th>amount</th>
+											<th>profit</th>
+											<th>status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="border-[#E9E7FD]">
+											<td class="font-bold">#6545</td>
+											<td>Name</td>
+											<td>Demo name</td>
+											<td>$654</td>
+											<td class="flex items-center gap-x-2">
+												$154
+												<p class="success-badge">16%</p>
+											</td>
+											<td>
+												<p class="font-normal warning-badge w-fit">Running</p>
+											</td>
+											<td>
+												<p class="link link-hover">
+													<i
+														class="text-2xl text-base-200 bi bi-caret-down-square"
+													></i>
+												</p>
+											</td>
+										</tr>
+
+										<tr class="border-[#E9E7FD]">
+											<td class="font-bold">#6545</td>
+											<td>Name</td>
+											<td>Demo name</td>
+											<td>$654</td>
+											<td class="flex items-center gap-x-2">
+												$154
+												<p class="success-badge">16%</p>
+											</td>
+											<td>
+												<p class="font-normal warning-badge w-fit">Running</p>
+											</td>
+											<td>
+												<p class="link link-hover">
+													<i
+														class="text-2xl text-base-200 bi bi-caret-down-square"
+													></i>
+												</p>
+											</td>
+										</tr>
+
+										<tr class="border-[#E9E7FD]">
+											<td class="font-bold">#6545</td>
+											<td>Name</td>
+											<td>Demo name</td>
+											<td>$654</td>
+											<td class="flex items-center gap-x-2">
+												$154
+												<p class="success-badge">16%</p>
+											</td>
+											<td>
+												<p class="font-normal warning-badge w-fit">Running</p>
+											</td>
+											<td>
+												<p class="link link-hover">
+													<i
+														class="text-2xl text-base-200 bi bi-caret-down-square"
+													></i>
+												</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div
+								class="flex flex-col items-center justify-between p-5 mt-16 gap-y-5 lg:flex-row"
+							>
+								<p class="flex items-center text-base-200 gap-x-2">
+									Showing
+									<select class="text-black select select-sm select-bordered">
+										<option>10</option>
+										<option>20</option>
+										<option>30</option>
+									</select>
+									of 50
+								</p>
+								<div class="join gap-x-1">
+									<button class="page">
+										<i class="bi bi-chevron-left"></i>
+									</button>
+									<button class="page page-active">1</button>
+									<button class="page">2</button>
+									<button class="page">3</button>
+									<button class="page">4</button>
+									<button class="page">
+										<i class="bi bi-chevron-right"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="hidden tab-details" id="cancelled">
+						<div class="mt-10 bg-base-100 rounded-xl">
+							<div class="overflow-x-auto bg-base-100">
+								<table class="table table-lg border-[#d1d1d1]">
+									<!-- head -->
+									<thead>
+										<tr class="border-[#E9E7FD] uppercase">
+											<th>order id</th>
+											<th>service man</th>
+											<th>customer</th>
+											<th>amount</th>
+											<th>profit</th>
+											<th>status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="border-[#E9E7FD]">
+											<td class="font-bold">#6545</td>
+											<td>Name</td>
+											<td>Demo name</td>
+											<td>$654</td>
+											<td class="flex items-center gap-x-2">
+												$154
+												<p class="success-badge">16%</p>
+											</td>
+											<td>
+												<p class="font-normal error-badge w-fit">Cancelled</p>
+											</td>
+											<td>
+												<p class="link link-hover">
+													<i
+														class="text-2xl text-base-200 bi bi-caret-down-square"
+													></i>
+												</p>
+											</td>
+										</tr>
+
+										<tr class="border-[#E9E7FD]">
+											<td class="font-bold">#6545</td>
+											<td>Name</td>
+											<td>Demo name</td>
+											<td>$654</td>
+											<td class="flex items-center gap-x-2">
+												$154
+												<p class="success-badge">16%</p>
+											</td>
+											<td>
+												<p class="font-normal error-badge w-fit">Cancelled</p>
+											</td>
+											<td>
+												<p class="link link-hover">
+													<i
+														class="text-2xl text-base-200 bi bi-caret-down-square"
+													></i>
+												</p>
+											</td>
+										</tr>
+
+										<tr class="border-[#E9E7FD]">
+											<td class="font-bold">#6545</td>
+											<td>Name</td>
+											<td>Demo name</td>
+											<td>$654</td>
+											<td class="flex items-center gap-x-2">
+												$154
+												<p class="success-badge">16%</p>
+											</td>
+											<td>
+												<p class="font-normal error-badge w-fit">Cancelled</p>
+											</td>
+											<td>
+												<p class="link link-hover">
+													<i
+														class="text-2xl text-base-200 bi bi-caret-down-square"
+													></i>
+												</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div
+								class="flex flex-col items-center justify-between p-5 mt-16 gap-y-5 lg:flex-row"
+							>
+								<p class="flex items-center text-base-200 gap-x-2">
+									Showing
+									<select class="text-black select select-sm select-bordered">
+										<option>10</option>
+										<option>20</option>
+										<option>30</option>
+									</select>
+									of 50
+								</p>
+								<div class="join gap-x-1">
+									<button class="page">
+										<i class="bi bi-chevron-left"></i>
+									</button>
+									<button class="page page-active">1</button>
+									<button class="page">2</button>
+									<button class="page">3</button>
+									<button class="page">4</button>
+									<button class="page">
+										<i class="bi bi-chevron-right"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

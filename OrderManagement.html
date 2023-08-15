@@ -127,87 +127,91 @@
 									<option disabled selected>Filter by data range</option>
 								</select>
 							</div>
-							<div class="mt-10 overflow-x-auto bg-base-100 rounded-xl">
-								<table class="table table-lg border-[#d1d1d1]">
-									<!-- head -->
-									<thead>
-										<tr class="border-[#E9E7FD] uppercase">
-											<th>order id</th>
-											<th>service man</th>
-											<th>customer</th>
-											<th>amount</th>
-											<th>profit</th>
-											<th>status</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal warning-badge w-fit">Running</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
+							<div class="mt-10 bg-base-100 rounded-xl">
+								<div class="overflow-x-auto bg-base-100">
+									<table class="table table-lg border-[#d1d1d1]">
+										<!-- head -->
+										<thead>
+											<tr class="border-[#E9E7FD] uppercase">
+												<th>order id</th>
+												<th>service man</th>
+												<th>customer</th>
+												<th>amount</th>
+												<th>profit</th>
+												<th>status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal warning-badge w-fit">Running</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
 
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal success-badge w-fit">Completed</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal success-badge w-fit">
+														Completed
+													</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
 
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal error-badge w-fit">Cancelled</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal error-badge w-fit">Cancelled</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 
 								<div
-									class="flex flex-col items-center justify-between p-5 mt-16 lg:flex-row"
+									class="flex flex-col items-center justify-between p-5 mt-16 gap-y-5 lg:flex-row"
 								>
 									<p class="flex items-center text-base-200 gap-x-2">
 										Showing
@@ -235,11 +239,11 @@
 						</div>
 
 						<div class="hidden tab-details" id="pending">
-							<div class="flex justify-between">
-								<div class="flex gap-x-1 bg-base-100 w-fit">
+							<div class="flex flex-col justify-between gap-y-2 lg:flex-row">
+								<div class="flex gap-x-1 bg-base-100 lg:w-fit">
 									<input
 										type="text"
-										class="input focus:outline-1"
+										class="w-full input focus:outline-1"
 										placeholder="Search by order id"
 									/>
 									<button
@@ -252,86 +256,90 @@
 									<option disabled selected>Filter by data range</option>
 								</select>
 							</div>
-							<div class="mt-10 overflow-x-auto bg-base-100 rounded-xl">
-								<table class="table table-lg border-[#d1d1d1]">
-									<!-- head -->
-									<thead>
-										<tr class="border-[#E9E7FD] uppercase">
-											<th>order id</th>
-											<th>service man</th>
-											<th>customer</th>
-											<th>amount</th>
-											<th>profit</th>
-											<th>status</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal warning-badge w-fit">Running</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
+							<div class="mt-10 bg-base-100 rounded-xl">
+								<div class="overflow-x-auto bg-base-100">
+									<table class="table table-lg border-[#d1d1d1]">
+										<!-- head -->
+										<thead>
+											<tr class="border-[#E9E7FD] uppercase">
+												<th>order id</th>
+												<th>service man</th>
+												<th>customer</th>
+												<th>amount</th>
+												<th>profit</th>
+												<th>status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal warning-badge w-fit">Running</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
 
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal warning-badge w-fit">Running</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal warning-badge w-fit">Running</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
 
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal warning-badge w-fit">Running</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal warning-badge w-fit">Running</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 
-								<div class="flex items-center justify-between p-5 mt-16">
+								<div
+									class="flex flex-col items-center justify-between p-5 mt-16 gap-y-5 lg:flex-row"
+								>
 									<p class="flex items-center text-base-200 gap-x-2">
 										Showing
 										<select class="text-black select select-sm select-bordered">
@@ -358,11 +366,11 @@
 						</div>
 
 						<div class="hidden tab-details" id="confirmed">
-							<div class="flex justify-between">
-								<div class="flex gap-x-1 bg-base-100 w-fit">
+							<div class="flex flex-col justify-between gap-y-2 lg:flex-row">
+								<div class="flex gap-x-1 bg-base-100 lg:w-fit">
 									<input
 										type="text"
-										class="input focus:outline-1"
+										class="w-full input focus:outline-1"
 										placeholder="Search by order id"
 									/>
 									<button
@@ -375,86 +383,96 @@
 									<option disabled selected>Filter by data range</option>
 								</select>
 							</div>
-							<div class="mt-10 overflow-x-auto bg-base-100 rounded-xl">
-								<table class="table table-lg border-[#d1d1d1]">
-									<!-- head -->
-									<thead>
-										<tr class="border-[#E9E7FD] uppercase">
-											<th>order id</th>
-											<th>service man</th>
-											<th>customer</th>
-											<th>amount</th>
-											<th>profit</th>
-											<th>status</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal success-badge w-fit">Completed</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
+							<div class="mt-10 bg-base-100 rounded-xl">
+								<div class="overflow-x-auto bg-base-100">
+									<table class="table table-lg border-[#d1d1d1]">
+										<!-- head -->
+										<thead>
+											<tr class="border-[#E9E7FD] uppercase">
+												<th>order id</th>
+												<th>service man</th>
+												<th>customer</th>
+												<th>amount</th>
+												<th>profit</th>
+												<th>status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal success-badge w-fit">
+														Completed
+													</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
 
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal success-badge w-fit">Completed</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal success-badge w-fit">
+														Completed
+													</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
 
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal success-badge w-fit">Completed</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal success-badge w-fit">
+														Completed
+													</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 
-								<div class="flex items-center justify-between p-5 mt-16">
+								<div
+									class="flex flex-col items-center justify-between p-5 mt-16 gap-y-5 lg:flex-row"
+								>
 									<p class="flex items-center text-base-200 gap-x-2">
 										Showing
 										<select class="text-black select select-sm select-bordered">
@@ -481,11 +499,11 @@
 						</div>
 
 						<div class="hidden tab-details" id="cancelled">
-							<div class="flex justify-between">
-								<div class="flex gap-x-1 bg-base-100 w-fit">
+							<div class="flex flex-col justify-between gap-y-2 lg:flex-row">
+								<div class="flex gap-x-1 bg-base-100 lg:w-fit">
 									<input
 										type="text"
-										class="input focus:outline-1"
+										class="w-full input focus:outline-1"
 										placeholder="Search by order id"
 									/>
 									<button
@@ -498,86 +516,90 @@
 									<option disabled selected>Filter by data range</option>
 								</select>
 							</div>
-							<div class="mt-10 overflow-x-auto bg-base-100 rounded-xl">
-								<table class="table table-lg border-[#d1d1d1]">
-									<!-- head -->
-									<thead>
-										<tr class="border-[#E9E7FD] uppercase">
-											<th>order id</th>
-											<th>service man</th>
-											<th>customer</th>
-											<th>amount</th>
-											<th>profit</th>
-											<th>status</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal error-badge w-fit">Cancelled</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
+							<div class="mt-10 bg-base-100 rounded-xl">
+								<div class="overflow-x-auto bg-base-100">
+									<table class="table table-lg border-[#d1d1d1]">
+										<!-- head -->
+										<thead>
+											<tr class="border-[#E9E7FD] uppercase">
+												<th>order id</th>
+												<th>service man</th>
+												<th>customer</th>
+												<th>amount</th>
+												<th>profit</th>
+												<th>status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal error-badge w-fit">Cancelled</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
 
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal error-badge w-fit">Cancelled</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal error-badge w-fit">Cancelled</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
 
-										<tr class="border-[#E9E7FD]">
-											<td class="font-bold">#6545</td>
-											<td>Name</td>
-											<td>Demo name</td>
-											<td>$654</td>
-											<td class="flex items-center gap-x-2">
-												$154
-												<p class="success-badge">16%</p>
-											</td>
-											<td>
-												<p class="font-normal error-badge w-fit">Cancelled</p>
-											</td>
-											<td>
-												<p class="link link-hover">
-													<i
-														class="text-2xl text-base-200 bi bi-caret-down-square"
-													></i>
-												</p>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+											<tr class="border-[#E9E7FD]">
+												<td class="font-bold">#6545</td>
+												<td>Name</td>
+												<td>Demo name</td>
+												<td>$654</td>
+												<td class="flex items-center gap-x-2">
+													$154
+													<p class="success-badge">16%</p>
+												</td>
+												<td>
+													<p class="font-normal error-badge w-fit">Cancelled</p>
+												</td>
+												<td>
+													<p class="link link-hover">
+														<i
+															class="text-2xl text-base-200 bi bi-caret-down-square"
+														></i>
+													</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 
-								<div class="flex items-center justify-between p-5 mt-16">
+								<div
+									class="flex flex-col items-center justify-between p-5 mt-16 gap-y-5 lg:flex-row"
+								>
 									<p class="flex items-center text-base-200 gap-x-2">
 										Showing
 										<select class="text-black select select-sm select-bordered">
