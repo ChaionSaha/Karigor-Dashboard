@@ -7822,6 +7822,10 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 0.5rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .mt-24{
   margin-top: 6rem;
 }
@@ -7832,10 +7836,6 @@ details.collapse summary::-webkit-details-marker{
 
 .mt-7{
   margin-top: 1.75rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
 }
 
 .box-border{
@@ -8983,14 +8983,9 @@ details.collapse summary::-webkit-details-marker{
   border-color: hsl(var(--s) / var(--tw-border-opacity));
 }
 
-.border-base-200{
+.border-primary{
   --tw-border-opacity: 1;
-  border-color: hsl(var(--b2) / var(--tw-border-opacity));
-}
-
-.border-base-300{
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--b3) / var(--tw-border-opacity));
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -9022,16 +9017,12 @@ details.collapse summary::-webkit-details-marker{
   background-color: hsl(var(--wa) / var(--tw-bg-opacity));
 }
 
-.bg-gradient-to-r{
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-t{
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .from-primary{
@@ -9158,6 +9149,11 @@ details.collapse summary::-webkit-details-marker{
   padding: 1.25rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -9181,11 +9177,6 @@ details.collapse summary::-webkit-details-marker{
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .text-left{
@@ -10239,6 +10230,11 @@ details.collapse summary::-webkit-details-marker{
 .hover\:before\:text-center:hover::before{
   content: var(--tw-content);
   text-align: center;
+}
+
+.focus\:border-primary:focus{
+  --tw-border-opacity: 1;
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
 }
 
 .focus\:outline-1:focus{

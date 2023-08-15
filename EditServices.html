@@ -71,13 +71,13 @@
 			</div>
 
 			<!-- Main body section -->
-			<div
-				class="flex flex-col w-full overflow-y-auto xl:px-10 px-5 xl:w-[80%] bg-base-300"
-			>
+			<div class="flex flex-col w-full overflow-y-auto xl:w-[80%] bg-base-300">
 				<!-- header name section -->
-				<div class="flex flex-col justify-between py-5 gap-y-5 lg:flex-row">
+				<div
+					class="flex flex-col justify-between px-5 py-5 border-b gap-y-5 lg:flex-row bg-base-100 xl:px-10"
+				>
 					<div class="flex justify-between">
-						<h2 class="text-2xl font-bold">Services List</h2>
+						<h2 class="text-2xl font-bold">Edit Service</h2>
 						<button class="btn btn-outline xl:hidden" onclick="sidebarToggle()">
 							<i class="text-xl text-base-200 bi bi-text-indent-left"></i>
 						</button>
@@ -97,87 +97,38 @@
 					</div>
 				</div>
 
-				<div class="flex flex-col mt-5">
-					<div class="flex flex-col justify-between lg:flex-row gap-y-5">
-						<div class="flex gap-x-1 bg-base-100 lg:w-fit">
-							<input
-								type="text"
-								class="w-full input focus:outline-1"
-								placeholder="Search"
-							/>
-							<button
-								class="duration-150 btn btn-ghost hover:text-white hover:bg-gradient-to-r from-primary to-secondary"
-							>
-								<i class="text-xl bi bi-search"></i>
-							</button>
-						</div>
-						<a href="./AddServices.html" class="btn btn-outline btn-secondary">
-							Add Service <i class="text-xl bi bi-plus"></i>
-						</a>
-					</div>
-
-					<div class="mt-10 bg-base-100 rounded-xl">
-						<div class="overflow-x-auto bg-base-100">
-							<table class="table table-lg border-[#d1d1d1]">
-								<!-- head -->
-								<thead>
-									<tr class="border-[#E9E7FD] uppercase">
-										<th>name</th>
-										<th>image</th>
-										<th>action</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr class="border-[#E9E7FD]">
-										<td class="h-full font-bold gap-x-2">Chaion</td>
-										<td>
-											<img src="./img/demo-service-list-image.png" alt="" />
-										</td>
-										<td>
-											<a
-												href="./EditServices.html"
-												class="btn hover:text-black btn-sm btn-outline lg:btn-ghost"
-											>
-												<i class="text-xl bi bi-pencil-square"></i>
-											</a>
-
-											<button
-												class="mt-2 btn hover:text-black btn-sm btn-outline lg:mt-0 lg:btn-ghost"
-											>
-												<i class="text-xl bi bi-trash"></i>
-											</button>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-
-						<div
-							class="flex flex-col items-center justify-between p-5 mt-16 lg:flex-row gap-y-5"
+				<div class="flex flex-col px-5 mt-5 xl:px-10">
+					<div class="flex flex-col gap-y-2">
+						<p>Service Image</p>
+						<img src="./img/uploadImg2.png" class="w-fit" alt="" />
+						<label
+							for="uploadImage"
+							class="self-start normal-case bg-transparent btn hover:bg-secondary hover:text-white border-secondary text-base-200"
 						>
-							<p class="flex items-center text-base-200 gap-x-2">
-								Showing
-								<select class="text-black select select-sm select-bordered">
-									<option>10</option>
-									<option>20</option>
-									<option>30</option>
-								</select>
-								of 50
-							</p>
-							<div class="join gap-x-1">
-								<button class="page">
-									<i class="bi bi-chevron-left"></i>
-								</button>
-								<button class="page page-active">1</button>
-								<button class="page">2</button>
-								<button class="page">3</button>
-								<button class="page">4</button>
-								<button class="page">
-									<i class="bi bi-chevron-right"></i>
-								</button>
-							</div>
-						</div>
+							Change Image
+						</label>
+						<input
+							type="file"
+							id="uploadImage"
+							name="uploadImage"
+							class="hidden file-input file-input-bordered"
+						/>
 					</div>
+					<div class="flex flex-col mt-7 gap-y-2">
+						<label for="serviceName">Service Name</label>
+						<input
+							type="text"
+							class="w-full max-w-xs input input-bordered border-primary"
+							id="serviceName"
+							placeholder="Please enter your service name"
+						/>
+					</div>
+
+					<button
+						class="self-start px-10 mt-20 font-bold text-white underline normal-case border-0 btn bg-gradient-to-b from-primary to-secondary"
+					>
+						Update
+					</button>
 				</div>
 			</div>
 		</div>
