@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/output.css" />
+		<script defer src="./js/index.js"></script>
+
+		<title>Karigor Dashboard</title>
+	</head>
+	<body class="min-h-screen bg-base-300">
+		<div class="container flex mx-auto">
+			<!-- Sidebar  -->
+			<div
+				class="z-[100] bg-base-100 flex xl:px-5 duration-150 flex-col items-center w-full translate-x-[-100%] xl:translate-x-0 absolute xl:relative min-h-screen py-5 xl:w-[20%] gap-y-10"
+				id="sidebar"
+			>
+				<div class="relative flex justify-center w-full">
+					<img src="./img/logo.png" alt="" class="w-fit" />
+					<button
+						class="absolute right-[10%] btn btn-outline top-1/2 translate-y-[-50%] xl:hidden"
+						onclick="sidebarToggle()"
+					>
+						<i
+							class="text-xl text-base-200 hover:text-primary bi bi-text-indent-right"
+						></i>
+					</button>
+				</div>
+
+				<div class="flex flex-col gap-y-4 w-[80%] xl:w-[100%]">
+					<p
+						class="mb-5 text-sm text-center uppercase xl:mb-0 xl:text-left text-base-200"
+					>
+						Main menu
+					</p>
+					<a href="./index.html" class="sidebar-link">
+						<i class="bi bi-house"></i>
+						Dashboard</a
+					>
+					<a href="./Customers.html" class="sidebar-link">
+						<i class="bi bi-people"></i>
+						Customers</a
+					>
+					<a href="./ServiceMan.html" class="sidebar-link">
+						<i class="bi bi-person-circle"></i>
+						Service Man</a
+					>
+					<a class="sidebar-link">
+						<i class="bi bi-file-earmark-text"></i>
+						Post List</a
+					>
+					<a href="./ServiceList.html" class="sidebar-link">
+						<i class="bi bi-gear"></i>
+						Service List</a
+					>
+					<a
+						href="./OrderManagement.html"
+						class="sidebar-link active-sidebar-link"
+					>
+						<i class="bi bi-cart3"></i>
+						Order Management</a
+					>
+
+					<a class="sidebar-link">
+						<i class="bi bi-box"></i>
+						Transaction</a
+					>
+
+					<a href="" class="mt-5 sidebar-link">
+						<i class="text-xl bi bi-box-arrow-right"></i>
+						Log Out</a
+					>
+				</div>
+			</div>
+
+			<!-- Main body section -->
+			<div class="flex flex-col w-full overflow-y-auto xl:w-[80%] bg-base-300">
+				<!-- header name section -->
+				<div
+					class="flex flex-col justify-between px-5 py-5 gap-y-5 lg:flex-row xl:px-10"
+				>
+					<div class="flex justify-between">
+						<h2 class="text-2xl font-bold">Order Details</h2>
+						<button class="btn btn-outline xl:hidden" onclick="sidebarToggle()">
+							<i class="text-xl text-base-200 bi bi-text-indent-left"></i>
+						</button>
+					</div>
+
+					<div class="flex items-center gap-x-5">
+						<div class="flex text-2xl gap-x-5">
+							<button class="relative">
+								<i class="bi bi-chat-square-dots"></i>
+							</button>
+
+							<button class="relative">
+								<i class="bi bi-bell"></i>
+								<div class="notification-badge"></div>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- details section -->
+				<div class="flex justify-between px-5 mt-10 xl:px-10">
+					<div class="flex flex-col">
+						<p class="text-xl font-bold">#48564</p>
+						<p class="text-base-200">Order No.</p>
+					</div>
+					<button
+						class="normal-case bg-transparent text-base-200 btn border-secondary hover:bg-secondary hover:text-white"
+					>
+						Print
+					</button>
+				</div>
+
+				<div class="flex flex-col px-5 mt-10 lg:flex-row lg:ps-10 gap-x-10">
+					<div class="lg:w-[70%] bg-base-100 rounded-xl flex flex-col">
+						<div class="flex justify-between py-3 border-b px-7">
+							<p class="text-xl font-bold">Order Details</p>
+							<p class="success-badge">Confirmed</p>
+						</div>
+						<div class="flex flex-col py-10 gap-y-5 px-7">
+							<div class="flex flex-col">
+								<p class="text-xl font-bold">Post Name</p>
+								<p>Demo name</p>
+							</div>
+							<div class="flex flex-col">
+								<p class="text-xl font-bold">Amount</p>
+								<p>888 BDT</p>
+							</div>
+						</div>
+					</div>
+					<div class="lg:w-[30%] bg-base-100 rounded-xl flex flex-col">
+						<div class="flex flex-col pt-10 border-b px-7">
+							<p class="mb-2 text-xl font-bold">Service Man</p>
+							<div class="flex items-center my-5 gap-x-2">
+								<img src="./img/Avatar2.png" alt="" />
+								<div class="flex flex-col">
+									<p class="text-lg font-bold">Demo lox</p>
+									<p class="text-base-200">Demo@gmail.com</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="flex flex-col pt-5 border-b px-7">
+							<p class="mb-2 text-xl font-bold">Customer</p>
+							<div class="flex items-center my-5 gap-x-2">
+								<img src="./img/Avatar2.png" alt="" />
+								<div class="flex flex-col">
+									<p class="text-lg font-bold">Demo lox</p>
+									<p class="text-base-200">Demo@gmail.com</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="flex flex-col px-5 py-5 border-r">
+							<p class="uppercase text-base-200">personal information</p>
+							<div class="overflow-x-auto">
+								<table class="table font-medium special-table">
+									<tr>
+										<td>Contact Number</td>
+										<td>+880123456789</td>
+									</tr>
+
+									<tr>
+										<td>Gender</td>
+										<td>Male</td>
+									</tr>
+
+									<tr>
+										<td>Date of Birth</td>
+										<td>1 Jan, 1985</td>
+									</tr>
+									<tr>
+										<td>Address</td>
+										<td>Dhaka, BD</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
