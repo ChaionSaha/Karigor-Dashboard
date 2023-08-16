@@ -7847,6 +7847,10 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 1.75rem;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -7950,6 +7954,15 @@ details.collapse summary::-webkit-details-marker{
   height: 100%;
 }
 
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-20{
+  height: 5rem;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -7965,6 +7978,22 @@ details.collapse summary::-webkit-details-marker{
 
 .w-full{
   width: 100%;
+}
+
+.w-20{
+  width: 5rem;
+}
+
+.w-36{
+  width: 9rem;
+}
+
+.w-72{
+  width: 18rem;
+}
+
+.w-1\/3{
+  width: 33.333333%;
 }
 
 .max-w-xs{
@@ -8541,6 +8570,12 @@ details.collapse summary::-webkit-details-marker{
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -9154,6 +9189,10 @@ details.collapse summary::-webkit-details-marker{
      object-fit: scale-down;
 }
 
+.p-10{
+  padding: 2.5rem;
+}
+
 .p-5{
   padding: 1.25rem;
 }
@@ -9421,16 +9460,6 @@ details.collapse summary::-webkit-details-marker{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-warning-content{
-  --tw-text-opacity: 1;
-  color: hsl(var(--wac) / var(--tw-text-opacity));
-}
-
-.text-\[\#FFC600\]{
-  --tw-text-opacity: 1;
-  color: rgb(255 198 0 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -10302,6 +10331,10 @@ details.collapse summary::-webkit-details-marker{
     margin-top: 0px;
   }
 
+  .lg\:inline-block{
+    display: inline-block;
+  }
+
   .lg\:w-\[30\%\]{
     width: 30%;
   }
@@ -10321,6 +10354,16 @@ details.collapse summary::-webkit-details-marker{
 
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:object-contain{
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
+  .lg\:object-cover{
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .lg\:py-2{
