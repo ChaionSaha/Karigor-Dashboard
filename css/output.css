@@ -7806,6 +7806,10 @@ details.collapse summary::-webkit-details-marker{
   margin-bottom: 1.25rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .mb-5{
   margin-bottom: 1.25rem;
 }
@@ -7841,10 +7845,6 @@ details.collapse summary::-webkit-details-marker{
 
 .mt-7{
   margin-top: 1.75rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .box-border{
@@ -9183,26 +9183,22 @@ details.collapse summary::-webkit-details-marker{
   padding-bottom: 2.5rem;
 }
 
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-.pt-5{
+.py-5{
   padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pt-10{
   padding-top: 2.5rem;
 }
 
-.pb-2{
-  padding-bottom: 0.5rem;
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .text-left{
@@ -9285,6 +9281,11 @@ details.collapse summary::-webkit-details-marker{
   font-size: 14px;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -9292,11 +9293,6 @@ details.collapse summary::-webkit-details-marker{
 
 .text-xl{
   font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -9308,16 +9304,16 @@ details.collapse summary::-webkit-details-marker{
   font-weight: 800;
 }
 
+.font-medium{
+  font-weight: 500;
+}
+
 .font-normal{
   font-weight: 400;
 }
 
 .font-thin{
   font-weight: 100;
-}
-
-.font-medium{
-  font-weight: 500;
 }
 
 .uppercase{
@@ -10296,17 +10292,17 @@ details.collapse summary::-webkit-details-marker{
     margin-top: 0px;
   }
 
-  .lg\:w-fit{
-    width: -moz-fit-content;
-    width: fit-content;
+  .lg\:w-\[30\%\]{
+    width: 30%;
   }
 
   .lg\:w-\[70\%\]{
     width: 70%;
   }
 
-  .lg\:w-\[30\%\]{
-    width: 30%;
+  .lg\:w-fit{
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .lg\:grid-cols-4{
@@ -10387,11 +10383,6 @@ details.collapse summary::-webkit-details-marker{
   .xl\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .xl\:px-20{
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .xl\:ps-5{
