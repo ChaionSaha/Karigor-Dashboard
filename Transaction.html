@@ -49,7 +49,7 @@
 						<i class="bi bi-file-earmark-text"></i>
 						Post List</a
 					>
-					<a href="./ServiceList.html" class="sidebar-link active-sidebar-link">
+					<a href="./ServiceList.html" class="sidebar-link">
 						<i class="bi bi-gear"></i>
 						Service List</a
 					>
@@ -58,7 +58,7 @@
 						Order Management</a
 					>
 
-					<a href="./Transaction.html" class="sidebar-link">
+					<a href="./Transaction.html" class="sidebar-link active-sidebar-link">
 						<i class="bi bi-box"></i>
 						Transaction</a
 					>
@@ -77,7 +77,7 @@
 				<!-- header name section -->
 				<div class="flex flex-col justify-between py-5 gap-y-5 lg:flex-row">
 					<div class="flex justify-between">
-						<h2 class="text-2xl font-bold">Services List</h2>
+						<h2 class="text-2xl font-bold">Transaction</h2>
 						<button class="btn btn-outline xl:hidden" onclick="sidebarToggle()">
 							<i class="text-xl text-base-200 bi bi-text-indent-left"></i>
 						</button>
@@ -98,22 +98,27 @@
 				</div>
 
 				<div class="flex flex-col mt-5">
-					<div class="flex flex-col justify-between lg:flex-row gap-y-5">
-						<div class="flex gap-x-1 bg-base-100 lg:w-fit">
-							<input
-								type="text"
-								class="w-full input focus:outline-1"
-								placeholder="Search"
-							/>
-							<button
-								class="duration-150 btn btn-ghost hover:text-white hover:bg-gradient-to-r from-primary to-secondary"
-							>
-								<i class="text-xl bi bi-search"></i>
-							</button>
+					<div class="flex flex-col justify-between gap-y-2 lg:flex-row">
+						<div class="flex flex-col gap-y-2 lg:flex-row gap-x-5">
+							<div class="flex gap-x-1 bg-base-100 lg:w-fit">
+								<input
+									type="text"
+									class="w-full input focus:outline-1"
+									placeholder="Search by order id"
+								/>
+								<button
+									class="duration-150 btn btn-ghost hover:text-white hover:bg-gradient-to-r from-primary to-secondary"
+								>
+									<i class="text-xl bi bi-search"></i>
+								</button>
+							</div>
+							<select class="select text-base-200">
+								<option disabled selected>Status: All</option>
+							</select>
 						</div>
-						<a href="./AddServices.html" class="btn btn-outline btn-secondary">
-							Add Service <i class="text-xl bi bi-plus"></i>
-						</a>
+						<select class="select text-base-200">
+							<option disabled selected>Filter by data range</option>
+						</select>
 					</div>
 
 					<div class="mt-10 bg-base-100 rounded-xl">
@@ -122,30 +127,42 @@
 								<!-- head -->
 								<thead>
 									<tr class="border-[#E9E7FD] uppercase">
-										<th>name</th>
-										<th>image</th>
-										<th>action</th>
+										<th>ID</th>
+										<th>service man</th>
+										<th>number</th>
+										<th>trax id</th>
+										<th>amount</th>
+										<th>method</th>
+										<th>status</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr class="border-[#E9E7FD]">
-										<td class="h-full font-bold gap-x-2">Chaion</td>
+										<td>#5089</td>
+										<td>Demo Name</td>
+										<td>+880123456789</td>
+										<td>#78965</td>
+										<td>$123</td>
+										<td class="text-secondary">Bkash</td>
 										<td>
-											<img src="./img/demo-service-list-image.png" alt="" />
+											<select class="warning-badge">
+												<option selected>Pending</option>
+												<option>Completed</option>
+											</select>
 										</td>
+									</tr>
+									<tr class="border-[#E9E7FD]">
+										<td>#5089</td>
+										<td>Demo Name</td>
+										<td>+880123456789</td>
+										<td>#78965</td>
+										<td>$123</td>
+										<td class="text-secondary">Bkash</td>
 										<td>
-											<a
-												href="./EditServices.html"
-												class="btn hover:text-black btn-sm btn-outline lg:btn-ghost"
-											>
-												<i class="text-xl bi bi-pencil-square"></i>
-											</a>
-
-											<button
-												class="mt-2 btn hover:text-black btn-sm btn-outline lg:mt-0 lg:btn-ghost"
-											>
-												<i class="text-xl bi bi-trash"></i>
-											</button>
+											<select class="success-badge">
+												<option>Pending</option>
+												<option selected>Completed</option>
+											</select>
 										</td>
 									</tr>
 								</tbody>
