@@ -7743,16 +7743,16 @@ details.collapse summary::-webkit-details-marker{
   inset-inline-end: 0.25rem;
 }
 
+.right-2{
+  right: 0.5rem;
+}
+
 .right-\[10\%\]{
   right: 10%;
 }
 
 .top-1\/2{
   top: 50%;
-}
-
-.right-2{
-  right: 0.5rem;
 }
 
 .top-2{
@@ -7851,16 +7851,16 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 6rem;
 }
 
+.mt-4{
+  margin-top: 1rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
 
 .mt-7{
   margin-top: 1.75rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .box-border{
@@ -7968,11 +7968,6 @@ details.collapse summary::-webkit-details-marker{
 
 .h-full{
   height: 100%;
-}
-
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .min-h-screen{
@@ -8550,6 +8545,10 @@ details.collapse summary::-webkit-details-marker{
        column-gap: 1.25rem;
 }
 
+.gap-y-1{
+  row-gap: 0.25rem;
+}
+
 .gap-y-10{
   row-gap: 2.5rem;
 }
@@ -8564,10 +8563,6 @@ details.collapse summary::-webkit-details-marker{
 
 .gap-y-5{
   row-gap: 1.25rem;
-}
-
-.gap-y-1{
-  row-gap: 0.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -9234,11 +9229,6 @@ details.collapse summary::-webkit-details-marker{
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pt-10{

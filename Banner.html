@@ -102,17 +102,25 @@
 				</div>
 
 				<div class="flex flex-col mt-5">
-					<div class="flex gap-x-1 bg-base-100 lg:w-fit">
-						<input
-							type="text"
-							class="w-full input focus:outline-1"
-							placeholder="Search"
-						/>
-						<button
-							class="duration-150 btn btn-ghost hover:text-white hover:bg-gradient-to-r from-primary to-secondary"
+					<div class="flex flex-col justify-between lg:flex-row gap-y-5">
+						<div class="flex gap-x-1 bg-base-100 lg:w-fit">
+							<input
+								type="text"
+								class="w-full input focus:outline-1"
+								placeholder="Search"
+							/>
+							<button
+								class="duration-150 btn btn-ghost hover:text-white hover:bg-gradient-to-r from-primary to-secondary"
+							>
+								<i class="text-xl bi bi-search"></i>
+							</button>
+						</div>
+						<a
+							onclick="addBanner.showModal()"
+							class="btn btn-outline btn-secondary"
 						>
-							<i class="text-xl bi bi-search"></i>
-						</button>
+							Add Banner <i class="text-xl bi bi-plus"></i>
+						</a>
 					</div>
 
 					<div class="mt-10 bg-base-100 rounded-xl">
@@ -135,12 +143,12 @@
 											/>
 										</td>
 										<td>
-											<a
+											<!-- <a
 												onclick="bannerDetails.showModal()"
 												class="btn hover:text-black btn-sm btn-outline lg:btn-ghost"
 											>
 												<i class="text-xl bi bi-file-text"></i>
-											</a>
+											</a> -->
 											<button
 												onclick="editBanner.showModal()"
 												class="mt-2 btn hover:text-black btn-sm btn-outline lg:mt-0 lg:btn-ghost"
@@ -160,7 +168,7 @@
 
 						<!-- You can open the modal using ID.showModal() method -->
 
-						<dialog id="bannerDetails" class="modal">
+						<dialog id="addBanner" class="modal">
 							<div class="modal-box">
 								<form method="dialog">
 									<button
@@ -169,13 +177,17 @@
 										✕
 									</button>
 								</form>
-								<h3 class="text-lg font-bold">Banner Details</h3>
+								<h3 class="text-lg font-bold">Add Banner</h3>
 								<div class="flex flex-col form-control gap-y-1">
 									<label for="name" class="label">Banner Image</label>
 									<img
-										src="./img/banner_img.png"
-										class="object-cover w-full h-20"
+										src="./img/800_300.png"
+										class="self-center mt-4"
 										alt=""
+									/>
+									<input
+										type="file"
+										class="file-input file-input-bordered file-input-accent"
 									/>
 								</div>
 							</div>
@@ -190,7 +202,7 @@
 										✕
 									</button>
 								</form>
-								<h3 class="text-lg font-bold">Banner Details</h3>
+								<h3 class="text-lg font-bold">Edit Banner</h3>
 								<!--Image input -->
 								<div class="flex flex-col form-control gap-y-2">
 									<label for="name" class="label">Image</label>
