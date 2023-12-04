@@ -37,7 +37,7 @@
 						<i class="bi bi-house"></i>
 						Dashboard</a
 					>
-					<a href="./Customers.html" class="sidebar-link active-sidebar-link">
+					<a href="./Customers.html" class="sidebar-link">
 						<i class="bi bi-people"></i>
 						Customers</a
 					>
@@ -62,7 +62,7 @@
 						<i class="bi bi-box"></i>
 						Transaction</a
 					>
-					<a href="./Banner.html" class="sidebar-link">
+					<a href="./Banner.html" class="sidebar-link active-sidebar-link">
 						<i class="bi bi-card-image"></i>
 						Banners</a
 					>
@@ -81,7 +81,7 @@
 				<!-- header name section -->
 				<div class="flex flex-col justify-between py-5 gap-y-5 lg:flex-row">
 					<div class="flex justify-between">
-						<h2 class="text-2xl font-bold">Customers</h2>
+						<h2 class="text-2xl font-bold">Banners</h2>
 						<button class="btn btn-outline xl:hidden" onclick="sidebarToggle()">
 							<i class="text-xl text-base-200 bi bi-text-indent-left"></i>
 						</button>
@@ -121,9 +121,7 @@
 								<!-- head -->
 								<thead>
 									<tr class="border-[#E9E7FD] uppercase">
-										<th>name</th>
-										<th>phone number</th>
-										<th>address</th>
+										<th>Banner Image</th>
 										<th>action</th>
 									</tr>
 								</thead>
@@ -131,25 +129,23 @@
 									<tr class="border-[#E9E7FD]">
 										<td class="h-full font-bold gap-x-2">
 											<img
-												class="inline-block me-2"
-												src="./img/Avatar.png"
+												class="object-cover w-full h-20"
+												src="./img/banner_img.png"
 												alt=""
 											/>
-											Chaion
 										</td>
-										<td class="items-center">+880123456789</td>
-										<td>Dhaka Bangladesh</td>
 										<td>
 											<a
-												href="./CustomerDetails.html"
+												onclick="bannerDetails.showModal()"
 												class="btn hover:text-black btn-sm btn-outline lg:btn-ghost"
 											>
 												<i class="text-xl bi bi-file-text"></i>
 											</a>
 											<button
+												onclick="editBanner.showModal()"
 												class="mt-2 btn hover:text-black btn-sm btn-outline lg:mt-0 lg:btn-ghost"
 											>
-												<i class="text-xl bi bi-lock"></i>
+												<i class="text-xl bi bi-pencil-square"></i>
 											</button>
 											<button
 												class="mt-2 btn hover:text-black btn-sm btn-outline lg:mt-0 lg:btn-ghost"
@@ -157,17 +153,60 @@
 												<i class="text-xl bi bi-trash"></i>
 											</button>
 										</td>
-										<td>
-											<button
-												class="normal-case bg-transparent btn border-secondary hover:bg-secondary hover:text-white text-base-200"
-											>
-												View post
-											</button>
-										</td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
+
+						<!-- You can open the modal using ID.showModal() method -->
+
+						<dialog id="bannerDetails" class="modal">
+							<div class="modal-box">
+								<form method="dialog">
+									<button
+										class="absolute outline-none btn btn-sm btn-circle btn-ghost right-2 top-2"
+									>
+										✕
+									</button>
+								</form>
+								<h3 class="text-lg font-bold">Banner Details</h3>
+								<div class="flex flex-col form-control gap-y-1">
+									<label for="name" class="label">Banner Image</label>
+									<img
+										src="./img/banner_img.png"
+										class="object-cover w-full h-20"
+										alt=""
+									/>
+								</div>
+							</div>
+						</dialog>
+
+						<dialog id="editBanner" class="modal">
+							<div class="modal-box">
+								<form method="dialog">
+									<button
+										class="absolute outline-none btn btn-sm btn-circle btn-ghost right-2 top-2"
+									>
+										✕
+									</button>
+								</form>
+								<h3 class="text-lg font-bold">Banner Details</h3>
+								<!--Image input -->
+								<div class="flex flex-col form-control gap-y-2">
+									<label for="name" class="label">Image</label>
+
+									<img
+										src="./img/800_300.png"
+										class="self-center mt-4"
+										alt=""
+									/>
+									<input
+										type="file"
+										class="file-input file-input-bordered file-input-accent"
+									/>
+								</div>
+							</div>
+						</dialog>
 
 						<div
 							class="flex flex-col items-center justify-between p-5 mt-16 lg:flex-row gap-y-5"
