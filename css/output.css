@@ -449,14 +449,14 @@ html{
 }
 
 :root{
-  --p: 14 89% 54%;
-  --pf: 14 89% 47%;
+  --p: 220 72% 53%;
+  --pf: 220 72% 46%;
   --sf: 157 100% 22%;
   --af: 265 89% 11%;
   --nf: 0 0% 0%;
   --in: 198 93% 60%;
   --bc: 146 0% 19%;
-  --pc: 18 100% 91%;
+  --pc: 233 72% 92%;
   --sc: 141 34% 88%;
   --ac: 271 22% 83%;
   --nc: 145 0% 78%;
@@ -7978,6 +7978,10 @@ details.collapse summary::-webkit-details-marker{
   width: 33.333333%;
 }
 
+.w-40{
+  width: 10rem;
+}
+
 .w-\[80\%\]{
   width: 80%;
 }
@@ -7989,10 +7993,6 @@ details.collapse summary::-webkit-details-marker{
 
 .w-full{
   width: 100%;
-}
-
-.w-40{
-  width: 10rem;
 }
 
 .max-w-xs{
@@ -9050,6 +9050,11 @@ details.collapse summary::-webkit-details-marker{
   background-color: hsl(var(--b3) / var(--tw-bg-opacity));
 }
 
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: hsl(var(--s) / var(--tw-bg-opacity));
@@ -9062,11 +9067,6 @@ details.collapse summary::-webkit-details-marker{
 .bg-warning{
   --tw-bg-opacity: 1;
   background-color: hsl(var(--wa) / var(--tw-bg-opacity));
-}
-
-.bg-gray-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
@@ -9215,6 +9215,11 @@ details.collapse summary::-webkit-details-marker{
   padding-right: 0.5rem;
 }
 
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -9238,11 +9243,6 @@ details.collapse summary::-webkit-details-marker{
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .pt-10{
@@ -10352,6 +10352,10 @@ details.collapse summary::-webkit-details-marker{
     display: inline-block;
   }
 
+  .lg\:w-3\/4{
+    width: 75%;
+  }
+
   .lg\:w-\[30\%\]{
     width: 30%;
   }
@@ -10363,10 +10367,6 @@ details.collapse summary::-webkit-details-marker{
   .lg\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
-  }
-
-  .lg\:w-3\/4{
-    width: 75%;
   }
 
   .lg\:grid-cols-4{
@@ -10414,6 +10414,10 @@ details.collapse summary::-webkit-details-marker{
     display: none;
   }
 
+  .xl\:w-2\/5{
+    width: 40%;
+  }
+
   .xl\:w-\[100\%\]{
     width: 100%;
   }
@@ -10424,10 +10428,6 @@ details.collapse summary::-webkit-details-marker{
 
   .xl\:w-\[80\%\]{
     width: 80%;
-  }
-
-  .xl\:w-2\/5{
-    width: 40%;
   }
 
   .xl\:translate-x-0{
